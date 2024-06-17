@@ -944,6 +944,9 @@ A simple clickable button. Supports the OnClick event callback.
 #### Scrollbar
 A generic scrollbar. Can be vertical or horizontal. Defaults to vertical.
 
+- void SetVertical(bool value)
+- bool IsVertical() const
+
 #### Label
 A simple static text field.
 
