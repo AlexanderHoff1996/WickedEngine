@@ -935,11 +935,14 @@ The wiGUI is responsible to run a GUI interface and manage widgets.
 ### EventArgs
 This will be sent to widget callbacks to provide event arguments in different formats
 
-### wiWidget
+### Widget
 The base widget interface can be extended with specific functionality. The GUI will store and process widgets by this interface. 
 
 #### Button
 A simple clickable button. Supports the OnClick event callback.
+
+#### Scrollbar
+A generic scrollbar. Can be vertical or horizontal. Defaults to vertical.
 
 #### Label
 A simple static text field.
@@ -962,6 +965,8 @@ A window widget is able to hold any number of other widgets. It can be moved acr
 #### ColorPicker
 Supports picking a HSV (or HSL) color, displaying its RGB values. On selection, the OnColorChanged event callback will be fired and the user can read the new RGB value from the event argument.
 
+#### TreeList
+A list of items in a tree (parent-child relationships).
 
 ## Helpers
 A collection of engine-level helper classes
